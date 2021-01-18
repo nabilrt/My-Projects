@@ -1,0 +1,204 @@
+
+public class Book implements BookInterface {
+    protected int BookId;
+    protected String BookName;
+    protected String Author;
+    protected double BookPrice;
+    protected int  availableQuantity;
+    public Book(int bookId, String bookName, String author, double bookPrice, int availableQuantity) {
+        BookId = bookId;
+        BookName = bookName;
+        Author = author;
+        BookPrice = bookPrice;
+        this.availableQuantity = availableQuantity;
+    }
+    public void setBookId(int bookId){
+        this.BookId=bookId;
+    }
+    public int getBookId() {
+        return BookId;
+    }
+    public void setBookName(String bookName) {
+        BookName = bookName;
+    }
+    public String getBookName() {
+        return BookName;
+    }
+    public void setAuthor(String author) {
+        Author = author;
+    }
+    public String getAuthor() {
+        return Author;
+    }
+    public void setBookPrice(double bookPrice) {
+        BookPrice = bookPrice;
+    }
+    public double getBookPrice() {
+        return BookPrice;
+    }
+    public void setAvailableQuantity(int availableQuantity) {
+        this.availableQuantity = availableQuantity;
+    }
+    public int getAvailableQuantity() {
+        return availableQuantity;
+    }
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+public class BookShop {
+    protected Book[] book =new Book[100];
+    public boolean insertBook(Book b){
+        boolean inserted=false;
+        for(int i=0; i< book.length; i++){
+            if(book[i]==null){
+                book[i]=b;
+                inserted=true;
+                break;
+            }
+        }
+        return inserted;
+    }
+    public boolean removeBook(int BookId){
+        boolean removed=false;
+        for(int i=0; i< book.length; i++){
+                if(book[i].getBookId()==BookId){
+                    book[i]=null;
+                    removed=true;
+                    break;
+                }
+        }
+        return removed;
+    }
+    public boolean SearchBook(int BookId){
+        boolean found=false;
+        for(int i=0; i< book.length; i++){
+          if(book[i]!=null){
+              if(book[i].getBookId()==BookId){
+                  System.out.println("Book Id:"+book[i].BookId);
+                  System.out.println("Book Name:"+book[i].BookName);
+                  System.out.println("Book Author:"+book[i].Author);
+                  System.out.println("Book Found");
+                  break;
+              }
+          }
+          else {
+              found=true;
+          }
+        }
+        if(found){
+            System.out.println("Book not Found");
+        }
+        return found;
+    }
+    public boolean updateBook(int BookId,int bookAmount){
+        boolean updated=true;
+        for(int i=0; i< book.length; i++){
+            if(book[i]!=null){
+                if(book[i].BookId==BookId){
+                    if(bookAmount>0){
+                        book[i].availableQuantity+=bookAmount;
+                        System.out.println("Inventory Updated");
+                        break;
+                    }
+                }
+            }
+            else {
+                updated=false;
+            }
+        }
+        if(!updated){
+            System.out.println("No Such Book Found");
+        }
+        return updated;
+    }
+    public void showAllBook(){
+        for(int i=0; i< book.length; i++){
+            if(book[i]!=null){
+                System.out.println("Book ID:"+book[i].BookId);
+                System.out.println("Book Name:"+book[i].BookName);
+                System.out.println("Author:"+book[i].Author);
+                System.out.println("Price:"+book[i].BookPrice);
+                System.out.println("Available Quantity:"+book[i].availableQuantity);
+            }
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Menu {
+    public static void main(String[] args) {
+      Scanner scanner=new Scanner(System.in);
+      BookShop bookShop=new BookShop();
+      int choice;
+      System.out.println("Welcome to the Book Store");
+      do{
+          System.out.println("Welcome to the menu,");
+          System.out.println("[1]-Add Book");
+          System.out.println("[2]-Remove Book");
+          System.out.println("[3]-Search Book");
+          System.out.println("[4]-Update Available Quantity");
+          System.out.println("[5]-Show All Books");
+          System.out.println("[6]-Exit");
+          System.out.print("Enter your choice:");
+          choice=scanner.nextInt();
+          switch(choice){
+              case 1:{
+                  System.out.print("Enter the Book Id:");
+                  int bookid= scanner.nextInt();
+                  System.out.print("Enter the Book Name:");
+                  String bName= scanner.next();
+                  System.out.print("Enter the Author Name:");
+                  String aName= scanner.next();
+                  System.out.print("Enter the Price:");
+                  double price= scanner.nextDouble();
+                  System.out.print("Enter the number of books available:");
+                  int availableQuantity= scanner.nextInt();
+                  Book b1=new Book(bookid,bName,aName,price,availableQuantity);
+                  bookShop.insertBook(b1);
+                  System.out.println("Book Inserted");
+                  break;
+              }
+              case 2:{
+                  System.out.print("Enter the Book Id to remove:");
+                  int bId= scanner.nextInt();
+                  bookShop.removeBook(bId);
+                  System.out.println("Book Successfully Removed");
+                  break;
+              }
+              case 3:{
+                  System.out.print("Enter the Book Id to search:");
+                  int bId= scanner.nextInt();
+                  bookShop.SearchBook(bId);
+                  break;
+              }
+              case 4:{
+                  System.out.println("Enter the Book Id:");
+                  int id= scanner.nextInt();
+                  System.out.println("Enter the amount to Add:");
+                  int quantity= scanner.nextInt();
+                  bookShop.updateBook(id,quantity);
+                  break;
+              }
+              case 5:{
+                  System.out.println("Available Books in the Shop:");
+                  bookShop.showAllBook();
+                  break;
+              }
+              case 6:{
+                  System.out.println("Program Exiting.......");
+                  break;
+              }
+              default:{
+                  System.out.println("Wrong Choice");
+                  break;
+              }
+          }
+      }while(choice!=6);{
+            System.out.println("Thanks For Using!!!");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                             THE END
