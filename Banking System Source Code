@@ -1,0 +1,595 @@
+public class SavingsAccount {
+    protected int accountNumber;
+    protected String accountHolderName;
+    protected double balance;
+    protected double interestRate;
+
+    SavingsAccount(int accountNumber, String accountHolderName, double balance,double interestRate){
+        this.accountNumber=accountNumber;
+        this.accountHolderName=accountHolderName;
+        this.balance=balance;
+        this.interestRate=interestRate;
+    }
+
+    public void setAccountNumber(int accountNumber){
+        this.accountNumber=accountNumber;
+    }
+
+    public int getAccountNumber(){
+        return this.accountNumber;
+    }
+
+    public void setAccountHolderName(String accountHolderName){
+        this.accountHolderName=accountHolderName;
+    }
+
+    public String getAccountHolderName(){
+        return this.accountHolderName;
+    }
+
+    public void setBalance(double balance){
+        this.balance=balance;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setInterestRate(double interestRate) {
+        this.interestRate = interestRate;
+    }
+
+    public double getInterestRate() {
+        return interestRate;
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------
+
+public class CurrentAccount {
+    protected int accountNumber;
+    protected String accountHolderName;
+    protected double balance;
+
+    CurrentAccount(int accountNumber, String accountHolderName, double balance){
+        this.accountNumber=accountNumber;
+        this.accountHolderName=accountHolderName;
+        this.balance=balance;
+    }
+
+    public void setAccountNumber(int accountNumber){
+        this.accountNumber=accountNumber;
+    }
+
+    public int getAccountNumber(){
+        return this.accountNumber;
+    }
+
+    public void setAccountHolderName(String accountHolderName){
+        this.accountHolderName=accountHolderName;
+    }
+
+    public String getAccountHolderName(){
+        return this.accountHolderName;
+    }
+
+    public void setBalance(double balance){
+        this.balance=balance;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+}
+-----------------------------------------------------------------------------------------------------------------------------
+
+public class SavingsAccountOperations {
+    protected static int accountCount=0;
+
+    SavingsAccount[] savingsAccount=new SavingsAccount[100];
+
+    public boolean insertAccount(SavingsAccount sa){
+        accountCount++;
+        boolean inserted=false;
+        for(int i=0; i<savingsAccount.length; i++){
+            if(savingsAccount[i]==null){
+                savingsAccount[i]=sa;
+                inserted=true;
+                System.out.println("Account Inserted!");
+                break;
+            }
+        }
+        return inserted;
+    }
+
+    public boolean updateInterest(int accountNumber,double interestrate){
+        boolean update=true;
+        for (int i=0; i<savingsAccount.length; i++){
+            if(savingsAccount[i]!=null){
+                if(savingsAccount[i].getAccountNumber()==accountNumber){
+                    savingsAccount[i].interestRate=interestrate;
+                    System.out.println("Interest Rate Updated!!!");
+                    System.out.println("Account Number:"+savingsAccount[i].getAccountNumber());
+                    System.out.println("Account Holder Name:"+savingsAccount[i].getAccountHolderName());
+                    System.out.println("Balance:"+savingsAccount[i].getBalance());
+                    System.out.println("New Interest Rate:"+savingsAccount[i].getInterestRate());
+                    break;
+                }
+            }
+            else{
+                update=false;
+            }
+        }
+        if(!update){
+            System.out.println("No Such ID Found");
+        }
+        return update;
+    }
+
+    public boolean updateBalance(int accountNumber){
+        boolean upBalance=true;
+        for(int i=0; i<savingsAccount.length; i++){
+            if(savingsAccount[i]!=null){
+                if(savingsAccount[i].getAccountNumber()==accountNumber){
+                    savingsAccount[i].balance=savingsAccount[i].balance+((savingsAccount[i].balance)*(savingsAccount[i].interestRate));
+                    System.out.println("Balance Updated!!!");
+                    System.out.println("Account Number:"+savingsAccount[i].getAccountNumber());
+                    System.out.println("Account Holder Name:"+savingsAccount[i].getAccountHolderName());
+                    System.out.println("Balance after adding interest amount:"+savingsAccount[i].getBalance());
+                    break;
+                }
+            }
+            else{
+                upBalance=false;
+            }
+        }
+        if(!upBalance){
+            System.out.println("No such Account Found");
+        }
+        return upBalance;
+    }
+
+    public void numberofAccounts(){
+        System.out.println("Number of Currently Active account is:"+accountCount);
+    }
+
+    public boolean searchAccount(int accountNumber){
+        boolean found=false;
+        for(int i=0; i< savingsAccount.length; i++){
+            if(savingsAccount[i]!=null){
+                if(savingsAccount[i].getAccountNumber()==accountNumber){
+                    System.out.println("Account Found!!!");
+                    System.out.println("Account Number:"+savingsAccount[i].getAccountNumber());
+                    System.out.println("Account Holder Name:"+savingsAccount[i].getAccountHolderName());
+                    System.out.println("Balance:"+savingsAccount[i].getBalance());
+                    System.out.println("Interest Rate:"+savingsAccount[i].getInterestRate());
+                    break;
+                }
+            }
+            else{
+                found=true;
+            }
+        }
+        if(found){
+            System.out.println("Account Not Found");
+        }
+        return found;
+    }
+
+    public boolean deposit(int accountNumber,double amount){
+        boolean deposited=false;
+        for(int i=0; i<savingsAccount.length; i++){
+            if(savingsAccount[i]!=null){
+                if(savingsAccount[i].getAccountNumber()==accountNumber){
+                    if(amount>0){
+                        savingsAccount[i].balance+=amount;
+                        System.out.println("Amount Successfully Deposited!!!");
+                        break;
+                    }
+                    else{
+                        System.out.println("Amount cannot be zero or negative");
+                    }
+                }
+            }
+            else{
+                deposited=true;
+            }
+        }
+        if(deposited){
+            System.out.println("No Account Found to Deposit");
+        }
+        return deposited;
+    }
+
+    public boolean withdraw(int accountNumber, double amount){
+        boolean withdrawn=false;
+        for(int i=0; i<savingsAccount.length; i++){
+            if(savingsAccount[i]!=null){
+                if(savingsAccount[i].getAccountNumber()==accountNumber){
+                    if(amount<=savingsAccount[i].getBalance()){
+                        savingsAccount[i].balance-=amount;
+                        System.out.println("Amount Successfully Withdrawn!!!");
+                        break;
+                    }
+                    else{
+                        System.out.println("Amount cannot be zero or negative");
+                    }
+                }
+            }
+            else{
+                withdrawn=true;
+            }
+        }
+        if(withdrawn){
+            System.out.println("No Account Found to Deposit");
+        }
+        return withdrawn;
+    }
+    public boolean removeAccount(int savingsAccountNumber){
+        accountCount--;
+        boolean removed=false;
+        for (int i=0; i<savingsAccount.length; i++){
+                if(savingsAccount[i]!=null) {
+                    if(savingsAccount[i].accountNumber==savingsAccountNumber){
+                        savingsAccount[i]=null;
+                        System.out.println("Account Removed!");
+                        break;
+                    }
+                }
+                else{
+                    removed=true;
+                }
+        }
+        if(removed){
+            System.out.println("No Such ID Found");
+        }
+        return removed;
+    }
+
+    public void showAllAccounts(){
+        for(int i=0; i<savingsAccount.length; i++){
+            if(savingsAccount[i]!=null){
+                System.out.println("\nAccount Number:"+savingsAccount[i].getAccountNumber());
+                System.out.println("Account Holder Name:"+savingsAccount[i].getAccountHolderName());
+                System.out.println("Balance:"+savingsAccount[i].getBalance());
+                System.out.println("Interest Rate:"+savingsAccount[i].getInterestRate());
+            }
+        }
+    }
+
+
+}
+-----------------------------------------------------------------------------------------------------------------------------
+
+public class CurrentAccountOperations {
+    protected static int accountCount=0;
+
+    CurrentAccount[] currentAccounts=new CurrentAccount[100];
+
+    public boolean insertAccount(CurrentAccount ca){
+        accountCount++;
+        boolean inserted=false;
+        for(int i=0; i<currentAccounts.length; i++){
+            if(currentAccounts[i]==null){
+                currentAccounts[i]=ca;
+                inserted=true;
+                System.out.println("Account Inserted!");
+                break;
+            }
+        }
+        return inserted;
+    }
+
+    public void numberofAccounts(){
+        System.out.println("Number of Currently Active account is:"+accountCount);
+    }
+    public boolean searchAccount(int accountNumber){
+        boolean found=false;
+        for(int i=0; i< currentAccounts.length; i++){
+            if(currentAccounts[i]!=null){
+                if(currentAccounts[i].getAccountNumber()==accountNumber){
+                    System.out.println("Account Found!!!");
+                    System.out.println("Account Number:"+currentAccounts[i].getAccountNumber());
+                    System.out.println("Account Holder Name:"+currentAccounts[i].getAccountHolderName());
+                    System.out.println("Balance:"+currentAccounts[i].getBalance());
+                    break;
+                }
+            }
+            else{
+                found=true;
+            }
+        }
+        if(found){
+            System.out.println("Account Not Found");
+        }
+        return found;
+    }
+
+    public boolean deposit(int accountNumber,double amount){
+        boolean deposited=false;
+        for(int i=0; i<currentAccounts.length; i++){
+            if(currentAccounts[i]!=null){
+                if(currentAccounts[i].getAccountNumber()==accountNumber){
+                    if(amount>0){
+                        currentAccounts[i].balance+=amount;
+                        System.out.println("Amount Successfully Deposited!!!");
+                        break;
+                    }
+                    else{
+                        System.out.println("Amount cannot be zero or negative");
+                    }
+                }
+            }
+            else{
+                deposited=true;
+            }
+        }
+        if(deposited){
+            System.out.println("No Account Found to Deposit");
+        }
+        return deposited;
+    }
+
+    public boolean withdraw(int accountNumber, double amount){
+        boolean withdrawn=false;
+        for(int i=0; i<currentAccounts.length; i++){
+            if(currentAccounts[i]!=null){
+                if(currentAccounts[i].getAccountNumber()==accountNumber){
+                    if(amount<=currentAccounts[i].getBalance()){
+                        currentAccounts[i].balance-=amount;
+                        System.out.println("Amount Successfully Withdrawn!!!");
+                        break;
+                    }
+                    else{
+                        System.out.println("Amount cannot be zero or negative");
+                    }
+                }
+            }
+            else{
+                withdrawn=true;
+            }
+        }
+        if(withdrawn){
+            System.out.println("No Account Found to Deposit");
+        }
+        return withdrawn;
+    }
+
+    public boolean removeAccount(int currentAccountNumber){
+        accountCount--;
+        boolean removed=false;
+        for (int i=0; i<currentAccounts.length; i++){
+            if(currentAccounts[i]!=null) {
+                if(currentAccounts[i].accountNumber==currentAccountNumber){
+                    currentAccounts[i]=null;
+                    System.out.println("Account Removed!");
+                    break;
+                }
+            }
+            else{
+                removed=true;
+            }
+        }
+        if(removed){
+            System.out.println("No Such ID Found");
+        }
+        return removed;
+    }
+
+    public void showAllAccounts(){
+        for(int i=0; i<currentAccounts.length; i++){
+            if(currentAccounts[i]!=null){
+                System.out.println("\nAccount Number:"+currentAccounts[i].getAccountNumber());
+                System.out.println("Account Holder Name:"+currentAccounts[i].getAccountHolderName());
+                System.out.println("Balance:"+currentAccounts[i].getBalance());
+            }
+        }
+    }
+
+}
+----------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+public class Start {
+    public static void main(String[] args) {
+        SavingsAccountOperations savingsAccountOperations=new SavingsAccountOperations();
+        CurrentAccountOperations currentAccountOperations=new CurrentAccountOperations();
+        Scanner sc=new Scanner(System.in);
+        int choice;
+        System.out.println("Welcome to the AIUB Bank");
+        do{
+            System.out.println("Welcome to the menu,");
+            System.out.println("[1]-Add account");
+            System.out.println("[2]-Change savings interest rate");
+            System.out.println("[3]-Update the account balance");
+            System.out.println("[4]-Number of Active Accounts");
+            System.out.println("[5]-Search An Account");
+            System.out.println("[6]-Deposit Money");
+            System.out.println("[7]-Withdraw Money");
+            System.out.println("[8]-Remove An Existing Account");
+            System.out.println("[9]-Show All Accounts");
+            System.out.println("[10]-Exit the Menu");
+            System.out.print("Enter your choice:");
+            choice= sc.nextInt();
+            switch (choice){
+                case 1:{
+                    System.out.println("[1]-Savings Account");
+                    System.out.println("[2]-Current Account");
+                    System.out.print("Enter the type of account you want to open:");
+                    int ch= sc.nextInt();
+                    if(ch==1){
+                        System.out.println("Enter the Account Holder Name:");
+                        String accountHolderName= sc.next();
+                        System.out.println("Enter the Account Number:");
+                        int accountNumber=sc.nextInt();
+                        System.out.println("Enter the Initial Balance to Deposite:");
+                        double balance= sc.nextDouble();
+                        System.out.println("Enter the initial Interest Rate:");
+                        double interestRate=sc.nextDouble();
+                        SavingsAccount savingsAccount=new SavingsAccount(accountNumber,accountHolderName,balance,interestRate);
+                        savingsAccountOperations.insertAccount(savingsAccount);
+                    }
+                    else if(ch==2){
+                        System.out.println("Enter the Account Holder Name:");
+                        String accountHolderName= sc.next();
+                        System.out.println("Enter the Account Number:");
+                        int accountNumber=sc.nextInt();
+                        System.out.println("Enter the Initial Balance to Deposite:");
+                        double balance= sc.nextDouble();
+                        CurrentAccount currentAccount=new CurrentAccount(accountNumber,accountHolderName,balance);
+                        currentAccountOperations.insertAccount(currentAccount);
+                    }
+                    else{
+                        System.out.println("Wrong Choice!!!");
+                    }
+                    break;
+                }
+                case 2:{
+                    System.out.println("Enter the Savings Account Number:");
+                    int accNum= sc.nextInt();
+                    System.out.println("Enter the Updated Interest Rate:");
+                    double intRate= sc.nextDouble();
+                    savingsAccountOperations.updateInterest(accNum,intRate);
+                    break;
+                }
+                case 3:{
+                    System.out.println("Enter the Savings Account Number:");
+                    int accNumber= sc.nextInt();
+                    savingsAccountOperations.updateBalance(accNumber);
+                    break;
+                }
+                case 4:{
+                    System.out.println("[1]-Savings Account");
+                    System.out.println("[2]-Current Account");
+                    System.out.print("Enter which type of account's active number of accounts you want to check:");
+                    int c= sc.nextInt();
+                    if(c==1){
+                        savingsAccountOperations.numberofAccounts();
+                    }
+                    else if(c==2){
+                        currentAccountOperations.numberofAccounts();
+                    }
+                    else{
+                        System.out.println("Wrong choice");
+                    }
+                    break;
+                }
+                case 5:{
+                    System.out.println("[1]-Savings Account");
+                    System.out.println("[2]-Current Account");
+                    System.out.print("Enter which type of account you want to search from:");
+                    int cho= sc.nextInt();
+                    if(cho==1){
+                        System.out.print("Enter the Account Number:");
+                        int accNo= sc.nextInt();
+                        savingsAccountOperations.searchAccount(accNo);
+                    }
+                    else if(cho==2){
+                        System.out.print("Enter the Account Number:");
+                        int accno= sc.nextInt();
+                        currentAccountOperations.searchAccount(accno);
+                    }
+                    else{
+                        System.out.println("Wrong Choice");
+                    }
+                    break;
+                }
+                case 6:{
+                    System.out.println("[1]-Savings Account");
+                    System.out.println("[2]-Current Account");
+                    System.out.print("Enter in which type of account you want to deposit:");
+                    int dp= sc.nextInt();
+                    if(dp==1){
+                        System.out.print("Enter the Account Number:");
+                        int acno= sc.nextInt();
+                        System.out.print("Enter the Amount:");
+                        double amount= sc.nextDouble();
+                        savingsAccountOperations.deposit(acno,amount);
+                    }
+                    else if(dp==2){
+                        System.out.print("Enter the Account Number:");
+                        int acno= sc.nextInt();
+                        System.out.print("Enter the Amount:");
+                        double amount= sc.nextDouble();
+                        currentAccountOperations.deposit(acno,amount);
+                    }
+                    else{
+                        System.out.println("Wrong Choice!");
+                    }
+                    break;
+                }
+                case 7:{
+                    System.out.println("[1]-Savings Account");
+                    System.out.println("[2]-Current Account");
+                    System.out.print("Enter in which type of account you want to deposit:");
+                    int dp= sc.nextInt();
+                    if(dp==1){
+                        System.out.print("Enter the Account Number:");
+                        int acno= sc.nextInt();
+                        System.out.print("Enter the Amount:");
+                        double amount= sc.nextDouble();
+                        savingsAccountOperations.withdraw(acno,amount);
+                    }
+                    else if(dp==2){
+                        System.out.print("Enter the Account Number:");
+                        int acno= sc.nextInt();
+                        System.out.print("Enter the Amount:");
+                        double amount= sc.nextDouble();
+                        currentAccountOperations.withdraw(acno,amount);
+                    }
+                    else{
+                        System.out.println("Wrong Choice!");
+                    }
+                    break;
+                }
+                case 8:{
+                    System.out.println("[1]-Savings");
+                    System.out.println("[2]-Current");
+                    System.out.print("Enter the type of account you want to remove:");
+                    int c= sc.nextInt();
+                    if(c==1){
+                        System.out.print("Enter the Savings Account Number:");
+                        int sNumber= sc.nextInt();
+                        savingsAccountOperations.removeAccount(sNumber);
+                    }
+                    else if(c==2){
+                        System.out.print("Enter the Current Account Number:");
+                        int cNumber= sc.nextInt();
+                        currentAccountOperations.removeAccount(cNumber);
+                    }
+                    else{
+                        System.out.println("Wrong Choice!!!");
+                    }
+                    break;
+                }
+                case 9:{
+                    System.out.println("[1]-Savings Account");
+                    System.out.println("[2]-Current Account");
+                    int ch= sc.nextInt();
+                    if(ch==1){
+                        savingsAccountOperations.showAllAccounts();
+                    }
+                    else if(ch==2){
+                        currentAccountOperations.showAllAccounts();
+                    }
+                    else{
+                        System.out.println("Wrong Choice!!");
+                    }
+                    break;
+                }
+                case 10:{
+                    System.out.println("Program Exiting........");
+                    System.out.println("===========================");
+                    break;
+                }
+                default:{
+                    System.out.println("Wrong Choice, Please Try again!");
+                }
+            }
+        }while(choice!=10);{
+            System.out.println("Thanks for Banking with us");
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------
+                                                  THE END
