@@ -1,1 +1,156 @@
-<mxfile host="app.diagrams.net" modified="2021-10-20T04:41:57.394Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Edg/94.0.992.50" version="15.5.6" etag="GY9XFuusT_CUjba5FE0u" type="github"><diagram id="lC6jvNP4msVnlu0S2uOm">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-20T05:59:57.480Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Edg/94.0.992.50" etag="qm0vn2isDvSq9j94VkGB" version="15.5.6" type="github">
+  <diagram id="lC6jvNP4msVnlu0S2uOm" name="Page-1">
+    <mxGraphModel dx="990" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-1" value="Arad" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#FFFFFF;fillColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="70" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.68;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-1" target="dQnLc-2iCZyHQbYu3Ea1-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="120" as="sourcePoint" />
+            <mxPoint x="320" y="170" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-3" value="Timisoara" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="260" y="190" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-1" target="dQnLc-2iCZyHQbYu3Ea1-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="140" as="sourcePoint" />
+            <mxPoint x="385" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-7" value="Sibiu" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="355" y="190" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.38;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-1" target="dQnLc-2iCZyHQbYu3Ea1-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="120" as="sourcePoint" />
+            <mxPoint x="460" y="190" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-10" value="Zerind" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="455" y="190" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-12" value="Stack Status: Arad" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="630" y="130" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-13" value="Stack Status: &lt;strike&gt;Arad&lt;/strike&gt; Timisoara Sibiu Zerind" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="160" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-14" value="Stack Status: Timisoara Sibiu &lt;strike&gt;Zerind&lt;/strike&gt; Oradea" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="190" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-10" target="dQnLc-2iCZyHQbYu3Ea1-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="250" as="sourcePoint" />
+            <mxPoint x="470" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-16" value="Oradea" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-17" value="Stack Status: Timisoara Sibiu &lt;strike&gt;Oradea&lt;/strike&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="220" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-18" value="1st" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="85" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-19" value="2nd" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="415" y="210" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-20" value="3rd" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="315" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.29;exitY=0.99;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.667;entryY=0.083;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-7" target="dQnLc-2iCZyHQbYu3Ea1-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="250" as="sourcePoint" />
+            <mxPoint x="320" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-22" value="Riminicu" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="295" y="295" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.663;exitY=1.03;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.377;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-7" target="dQnLc-2iCZyHQbYu3Ea1-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="260" as="sourcePoint" />
+            <mxPoint x="406" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-24" value="Fagaras" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="405" y="300" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-25" value="4th" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="210" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-27" value="Stack Status: Timisoara &lt;strike&gt;Sibiu&lt;/strike&gt;&amp;nbsp;Riminicu Fagaras" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="250" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-28" value="5th" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="375" y="320" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.383;entryY=0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-24" target="dQnLc-2iCZyHQbYu3Ea1-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="420" as="sourcePoint" />
+            <mxPoint x="480" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-30" value="Bucharest" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="455" y="400" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-31" value="Stack Status: Timisoara&amp;nbsp;Riminicu &lt;strike&gt;Fagaras&lt;/strike&gt; Bucharest" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="280" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.33;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.644;entryY=0.036;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-30" target="dQnLc-2iCZyHQbYu3Ea1-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="460" as="sourcePoint" />
+            <mxPoint x="440" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-33" value="Pitesti" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="380" y="520" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-30" target="dQnLc-2iCZyHQbYu3Ea1-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="500" as="sourcePoint" />
+            <mxPoint x="485" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-35" value="Giurgiu" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="455" y="520" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-36" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.417;entryY=0.083;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.783;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="dQnLc-2iCZyHQbYu3Ea1-30" target="dQnLc-2iCZyHQbYu3Ea1-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="450" as="sourcePoint" />
+            <mxPoint x="550" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-37" value="Urziceni" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#006600;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="550" y="515" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-38" value="6th" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="420" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-39" value="7th" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="535" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-41" value="Stack Status: Timisoara&amp;nbsp;Riminicu&amp;nbsp;&lt;strike&gt;Bucharest&lt;/strike&gt;&amp;nbsp; Pitesti Giurgiu Urziceni" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="310" width="380" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-42" value="Stack Status: Timisoara&amp;nbsp;Riminicu&amp;nbsp;Pitesti Giurgiu &lt;strike&gt;Urziceni&lt;/strike&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="335" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-43" value="&lt;font color=&quot;#330000&quot;&gt;Source: Arad&lt;br&gt;Destination: Urziceni&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="620" y="90" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dQnLc-2iCZyHQbYu3Ea1-44" value="As we know in DFS we need to do the goal test while exploring&lt;br&gt;a node, when we were exploring Urziceni it passed the goal test,&lt;br&gt;so we can stop here." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#330000;" vertex="1" parent="1">
+          <mxGeometry x="560" y="380" width="360" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
