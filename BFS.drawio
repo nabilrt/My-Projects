@@ -1,1 +1,136 @@
-<mxfile host="app.diagrams.net" modified="2021-10-26T09:40:30.215Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.30" version="15.5.6" etag="vSn8Zo9rAUrn-TKNE_Ve" type="github"><diagram id="ZIw3CT2it3d-4CuWskHj">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-26T09:57:17.337Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.30" etag="yvy3s82T81_4v7RyfvwR" version="15.5.6" type="github">
+  <diagram id="ZIw3CT2it3d-4CuWskHj" name="Page-1">
+    <mxGraphModel dx="865" dy="508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-1" value="Arad" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="360" y="70" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="OsUE5N26jEfKON6Sc6eS-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="100" as="sourcePoint" />
+            <mxPoint x="310" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-3" value="Timisoara&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="250" y="170" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-4" value="Sibiu" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="360" y="170" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-5" value="Zerind" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="480" y="170" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="OsUE5N26jEfKON6Sc6eS-1" target="OsUE5N26jEfKON6Sc6eS-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="110" as="sourcePoint" />
+            <mxPoint x="340" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.371;entryY=-0.031;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="OsUE5N26jEfKON6Sc6eS-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="90" as="sourcePoint" />
+            <mxPoint x="410" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-8" value="Queue State: &lt;strike&gt;Arad&lt;/strike&gt; Timisoara Sibiu Zerind" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="635" y="110" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-9" value="Queue State:&lt;strike&gt;Timisoara&lt;/strike&gt; Sibiu Zerind Lugoj" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="635" y="140" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="OsUE5N26jEfKON6Sc6eS-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="240" as="sourcePoint" />
+            <mxPoint x="210" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-11" value="Lugoj" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="170" y="290" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-12" value="Queue State:&lt;strike&gt;Sibiu&lt;/strike&gt; Zerind Lugoj Riminicu Fagaras Oradea" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="585" y="170" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-13" value="Oradea" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="510" y="310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-14" value="Fagaras" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="310" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-15" value="Riminicu" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="290" y="310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=0.875;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OsUE5N26jEfKON6Sc6eS-4" target="OsUE5N26jEfKON6Sc6eS-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="250" as="sourcePoint" />
+            <mxPoint x="330" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.679;exitY=1.01;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OsUE5N26jEfKON6Sc6eS-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="240" as="sourcePoint" />
+            <mxPoint x="430" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="414" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.954;exitY=0.794;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OsUE5N26jEfKON6Sc6eS-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="240" as="sourcePoint" />
+            <mxPoint x="550" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-19" value="Queue State:&amp;nbsp;&lt;strike&gt;Zerind &lt;/strike&gt;Lugoj Riminicu Fagaras Oradea" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-20" value="Queue State:&lt;strike&gt;&amp;nbsp;Lugoj&lt;/strike&gt; Riminicu Fagaras Oradea Mehadia" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="230" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="191.56803324193515" y="349.9958004376683" as="sourcePoint" />
+            <mxPoint x="140" y="401.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-22" value="Mehadia" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="100" y="400" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-23" value="Queue State:&lt;strike&gt;Riminicu &lt;/strike&gt;Fagaras Oradea Mehadia Craiova Pitesti" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="260" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-24" value="Craiova&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="220" y="420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-25" value="Pitesti" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="340" y="420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="OsUE5N26jEfKON6Sc6eS-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="315" y="370" as="sourcePoint" />
+            <mxPoint x="265" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.688;exitY=0.952;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OsUE5N26jEfKON6Sc6eS-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="406.7157287525381" y="378.2842712474619" as="sourcePoint" />
+            <mxPoint x="370" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-28" value="Queue State:&lt;strike&gt;Fagaras&lt;/strike&gt; Oradea Mehadia Craiova Pitesti Bucharest" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="290" width="360" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.728;exitY=0.947;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OsUE5N26jEfKON6Sc6eS-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="455.03999999999996" y="386.15999999999997" as="sourcePoint" />
+            <mxPoint x="480" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OsUE5N26jEfKON6Sc6eS-32" value="Bucharest" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="460" y="410" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
